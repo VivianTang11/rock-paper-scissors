@@ -23,9 +23,9 @@ function game(){
     document.querySelectorAll('.btns').forEach((btn)=> {
         btn.addEventListener('click', (e) => {
             playerChoice = e.target.name
-            document.getElementById('playerChoice').setAttribute('src', `./${playerChoice}.png`)
+            document.getElementById('playerChoice').setAttribute('src', `./img/${playerChoice}.png`)
             computerChoice = array[Math.floor(Math.random() * array.length)]
-            document.getElementById('computerChoice').setAttribute('src', `./${computerChoice}.png`)
+            document.getElementById('computerChoice').setAttribute('src', `./img/${computerChoice}.png`)
 
             switch (true) {
                 case playerChoice === 'rock' && computerChoice === 'scissor':
