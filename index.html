@@ -5,9 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <header>
+        <h1>Rock Paper Scissor</h1>
+    </header>
+    
+    <main>
+        <section class="boards">
+            <div class="gameText">
+                <h3>First to 5points wins!</h3>
+                <span id="text">---</span>
+
+            </div>
+
+            <div class="gamePlay">
+                <div class="playerBoard">
+                    <h2>Player</h2>
+                    <span id="playerScore">0</span>
+                </div>
+                <div class="choiceBoard">
+                    <div class="choices">
+                        <img src="" alt="" id="playerChoice">
+                        <span class="vs">VS</span>
+                        <img src="" alt="" id="computerChoice">
+                    </div>
+                </div>
+                <div class="computerBoard">
+                    <h2>Computer</h2>
+                    <span id="computerScore">0</span>
+                </div>
+            </div>
+
+
+
+
+        </section>
+        <section class="selections">
+            <h2>Select your move:</h2>
+            <img class="btns" src="./rock.png" alt="Rock" name="rock">
+            <img class="btns" src="./paper.png" alt="Paper" name="paper">
+            <img class="btns" src="./scissor.png" alt="Scissor" name="scissor">        
+        </section>
+    </main>
+
     
 <script src="./index.js"></script>
 </body>
