@@ -15,7 +15,9 @@ function result(){
     document.getElementById('text').innerHTML = text
 
     if (playerScore == 5 || computerScore == 5) {
-        console.log('gameover');
+        setTimeout(()=> {
+            alert('gameover');
+        }, 1000)
     } 
 }
 
